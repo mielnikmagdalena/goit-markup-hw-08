@@ -1,0 +1,174 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $colorBackgroundBackdrop;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.is-hidden {
+    pointer-events: none;
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(0);
+}
+
+.modal {
+    position: relative;
+    width: 100%;
+    max-width: 528px;
+    height: 581px;
+    background-color: $primaryColor;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px $colorBackgroundBackdrop;
+    border-radius: 4px;
+}
+.modal__command {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $mainColor;
+}
+.label-personal-data {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: $colorIcon;
+    display: flex;
+    flex-direction: column;
+    width: 448px;
+    position: relative;
+    margin-left: 40px;
+    padding-top: 10px;
+}
+.label-personal-data__input-personal-data {
+    box-sizing: border-box;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    width: 100%;
+    height: 40px;
+    margin-right: 40px;
+    gap: 28px;
+    padding-top: 4px;
+    padding-left: 42px;
+    outline: none;
+
+    &:focus {
+        border: 1px solid $secondaryColor;
+        transition-property: border;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+.label-personal-data__svg-personal-data {
+    position: absolute;
+    bottom: 11px;
+    left: 12px;
+    fill: $mainColor;
+}
+.input-personal-data:focus + .svg-personal-data {
+    fill: $secondaryColor;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.textarea-command {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: none;
+    resize: none;
+    width: 100%;
+    height: 120px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    padding: 12px 16px 12px 16px;
+
+    &:focus {
+        border: 1px solid $secondaryColor;
+        transition-property: border;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+.send {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 54px;
+    cursor: pointer;
+}
+.send__statement {
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $colorIcon;
+    appearance: none;
+    border: 2px solid $colorStudio;
+    border-radius: 2px;
+    width: 16px;
+    height: 15px;
+    margin-top: 20px;
+    outline: none;
+
+    &:checked {
+        background-color: $secondaryColor;
+        border-color: $secondaryColor;
+    }
+
+    &--box {
+        position: absolute;
+        top: 3px;
+        left: 3px;
+    }
+    &--reference {
+        color: $secondaryColor;
+    }
+}
+.modal__button-send {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    letter-spacing: 0.06em;
+    color: $primaryColor;
+    background: $secondaryColor;
+    border: 2px solid $secondaryColor;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    width: 200px;
+    height: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 30px;
+    margin-left: 164px;
+    margin-right: 164px;
+    outline: none;
+    cursor: pointer;
+}
+.modal__close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: $primaryColor;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}

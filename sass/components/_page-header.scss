@@ -1,0 +1,170 @@
+.page-header {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: $colorHeader;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.container__studio-black {
+    color: $colorStudio;
+}
+
+.page-header > .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+
+.page-header > .container > nav {
+    display: flex;
+    gap: 93px;
+    align-items: center;
+}
+
+.page-header > .container > .contacts {
+    display: flex;
+    gap: 50px;
+}
+
+.page-header > .container > nav > .nav-list {
+    display: flex;
+    gap: 30px;
+}
+
+.page-header > .container > nav > a {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    /* identical to box height */
+    letter-spacing: 0.03em;
+    color: $secondaryColor;
+    text-decoration: none;
+}
+.nav-list {
+    list-style: none;
+}
+.nav-list a {
+    color: $mainColor;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    &:hover,
+    &:focus {
+        color: $secondaryColor;
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+.nav-list .nav-link {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $secondaryColor;
+}
+
+.nav-list__nav-link {
+    color: $secondaryColor;
+}
+.nav-list__active-link {
+    position: relative;
+}
+.nav-list__active-link::after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    height: 4px;
+    background: $secondaryColor;
+    border-radius: 2px;
+    bottom: -36px;
+    left: 0;
+}
+.contacts a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $colorIcon;
+}
+.contacts a:hover,
+.contacts a:focus {
+    color: $secondaryColor;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts__mail a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.contacts__mail a:hover svg {
+    fill: $secondaryColor;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts__mail a:focus svg {
+    fill: $secondaryColor;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts__envelope-icon {
+    fill: $colorIcon;
+
+    &:hover,
+    &:focus {
+        fill: $secondaryColor;
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+.contacts__tel a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.contacts__tel a:hover svg {
+    fill: $secondaryColor;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contacts__tel a:focus svg {
+    fill: $secondaryColor;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts__smartphone-icon {
+    fill: $colorIcon;
+
+    &:hover,
+    &:focus {
+        fill: $secondaryColor;
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}

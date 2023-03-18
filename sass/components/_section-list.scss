@@ -1,0 +1,40 @@
+.section-list {
+    padding-top: 94px;
+    padding-bottom: 0px;
+}
+.lorem-list {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 30px;
+}
+.lorem-list__our-atributes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 30px;
+    border-radius: 4px;
+    background-color: $colorBackgroundSectionCards;
+    padding: 30px 0px;
+    margin-bottom: 30px;
+}
+
+.lorem-list h3 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $mainColor;
+    padding-bottom: 10px;
+}
+
+.lorem-list p {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $colorIcon;
+    gap: 30px;
+    justify-content: flex-start;
+}

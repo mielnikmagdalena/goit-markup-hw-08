@@ -1,0 +1,57 @@
+.section-content {
+    max-width: 1600px;
+    margin: 0 auto;
+    background-image: linear-gradient(
+            $colorBackgroundSection,
+            $colorBackgroundSection
+        ),
+        url('../images/office.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: $colorFooterWrapper;
+
+    .section-content__first-heading {
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: $primaryColor;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+}
+.heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.order {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 50px;
+    background-color: $secondaryColor;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px 41px 10px 42px;
+}
+.order__text-order {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: $primaryColor;
+}

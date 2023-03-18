@@ -1,0 +1,78 @@
+.section-portfolio {
+    padding-top: 50px;
+    padding-bottom: 94px;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.list {
+    padding-bottom: 0px;
+}
+.project-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: calc((100% - 60px) / 3);
+    gap: 30px;
+
+    &__project-list-item {
+        display: flex;
+        align-items: flex-start;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+            0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+        cursor: pointer;
+    }
+}
+.slide-box {
+    position: relative;
+    overflow: hidden;
+}
+.box-overlay {
+    position: absolute;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+    color: $primaryColor;
+    background-color: rgba(33, 150, 243, 0.9);
+    transform: translateY(0);
+    padding: 49px 45px 24px;
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.slide-box:hover .box-overlay {
+    display: block;
+    background: rgba(33, 150, 243, 0.9);
+    transform: translateY(-100%);
+}
+.figcaption-item {
+    display: flex;
+    flex-direction: column;
+    background: $primaryColor;
+    border-right: 1px solid $colorFigcaption;
+    border-bottom: 1px solid $colorFigcaption;
+    border-left: 1px solid $colorFigcaption;
+    padding: 20px 24px;
+}
+
+.figcaption-item h3 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    text-align: left;
+    color: $mainColor;
+    padding-bottom: 4px;
+}
+
+.figcaption-item span {
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: $colorIcon;
+}
