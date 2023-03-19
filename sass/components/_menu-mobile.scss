@@ -1,4 +1,6 @@
-.menu-toggle {
+.menu-toggle .js-open-menu {
+    position: relative;
+    z-index: 2;
     min-height: 40px;
     min-width: 40px;
     display: flex;
@@ -6,7 +8,7 @@
     justify-content: center;
     margin: 0;
     padding: 0;
-    background-color: transparent;
+    background-color: $primaryColor;
     cursor: pointer;
     border: none;
     border-radius: 50%;
@@ -24,16 +26,16 @@
 }
 .menu-toggle:hover,
 .menu-toggle:focus {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: $secondaryColor;
 }
-.menu-container {
+.menu-container .js-menu-container {
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
     padding: 32px;
-    background-color: $secondaryColor;
+    background-color: $primaryColor;
     z-index: 999;
     transform: translateX(100%);
     transition: transform 250ms ease-in-out;
@@ -42,10 +44,26 @@
     transform: translateX(0);
 }
 .menu-container .menu-toggle {
-    position: absolute;
+    position: relative;
     top: 16px;
     right: 16px;
     color: $primaryColor;
+}
+.menu-toggle .js-open-menu {
+    position: absolute;
+    z-index: 1;
+    min-height: 40px;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    background-color: $primaryColor;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    outline: none;
 }
 .mobile-menu {
     padding: 0;

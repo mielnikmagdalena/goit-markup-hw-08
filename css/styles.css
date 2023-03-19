@@ -60,7 +60,7 @@ figure {
 .menu-toggle:focus {
     background-color: rgba(0, 0, 0, 0.1);
 }
-.menu-container {
+.menu-container .js-menu-container {
     position: fixed;
     top: 0;
     left: 0;

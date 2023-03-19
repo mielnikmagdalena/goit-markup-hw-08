@@ -1,14 +1,15 @@
 .container {
-    max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
-    @media (min-width: 480px) {
+    border: 2px solid #212121;
+
+    @include mq(phone) {
         width: 448px;
     }
-    @media (min-width: 768px) {
-        width: 768px;
+    @include mq(tablet) {
+        width: 720px;
     }
-    @media (min-width: 1200px) {
+    @include mq(desktop) {
         width: 1200px;
     }
 }
