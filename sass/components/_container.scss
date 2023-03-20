@@ -1,18 +1,10 @@
 .container {
     margin: 0 auto;
     padding: 0 15px;
+    max-width: 1200px;
     border: 2px solid #212121;
-
-    @include mq(phone) {
-        width: 448px;
-    }
-    @include mq(tablet) {
-        width: 720px;
-    }
-    @include mq(desktop) {
-        width: 1200px;
-    }
 }
+
 .container__studio-black {
     color: $colorStudio;
 }

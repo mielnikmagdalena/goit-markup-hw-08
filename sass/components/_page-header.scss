@@ -7,16 +7,6 @@
     margin: 0 auto;
     padding: 0 15px;
     border: 2px solid #212121;
-
-    @include mq(phone) {
-        width: 448px;
-    }
-    @include mq(tablet) {
-        width: 720px;
-    }
-    @include mq(desktop) {
-        width: 1200px;
-    }
 }
 .container__studio-black {
     color: $colorStudio;
@@ -30,23 +20,14 @@
     padding-bottom: 25px;
 
     @include mq(phone) {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
         padding-top: 16px;
         padding-bottom: 16px;
     }
     @include mq(tablet) {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
         padding-top: 26px;
         padding-bottom: 26px;
     }
     @include mq(desktop) {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
         padding-top: 24px;
         padding-bottom: 25px;
     }
@@ -60,20 +41,30 @@
         display: none;
     }
     @include mq(tablet) {
-        display: flex;
         gap: 83px;
-        align-items: center;
+        display: flex;
     }
     @include mq(desktop) {
-        display: flex;
         gap: 93px;
-        align-items: center;
     }
 }
 
 .page-header > .container > .contacts {
     display: flex;
     gap: 50px;
+    @include mq(phone) {
+        display: none;
+    }
+    @include mq(tablet) {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+    }
+    @include mq(desktop) {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+    }
 }
 
 .page-header > .container > nav > .nav-list {
