@@ -21,6 +21,15 @@
     text-align: center;
     padding-top: 0px;
     padding-bottom: 50px;
+    @include mq(phone) {
+        padding-bottom: 30px;
+    }
+    @include mq(tablet) {
+        padding-bottom: 30px;
+    }
+    @include mq(desktop) {
+        padding-bottom: 50px;
+    }
 }
 .container-clients {
     display: flex;
@@ -28,7 +37,29 @@
     align-items: center;
     justify-content: center;
     list-style: none;
+    @include mq(phone) {
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: calc((100% - 30px) / 2);
+    }
+    @include mq(tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: calc((100% - 60px) / 3);
+    }
+    @include mq(desktop) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
 }
+/*.project-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: calc((100%-60px) / 3);
+    gap: 30px;
+}*/
 .container-clients__signs {
     padding: 15px 32px;
     border: 1px solid $colorSocialIcons;

@@ -22,11 +22,13 @@
     }
     @include mq(tablet) {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
     @include mq(desktop) {
         display: flex;
         flex-direction: row;
+        flex-wrap: nowrap;
     }
 }
 .lorem-list__our-atributes {
