@@ -28,6 +28,7 @@
     }
     @include mq(tablet) {
         display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
     }
     @include mq(desktop) {

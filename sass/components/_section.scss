@@ -8,6 +8,16 @@
     letter-spacing: 0.03em;
     text-align: center;
     padding-bottom: 50px;
+    @include mq(phone) {
+        display: none;
+    }
+    @include mq(tablet) {
+        display: none;
+    }
+    @include mq(desktop) {
+        display: block;
+        text-align: center;
+    }
 }
 .container {
     max-width: 1200px;
@@ -20,6 +30,16 @@
     justify-content: center;
     list-style: none;
     gap: 30px;
+    @include mq(phone) {
+        display: none;
+    }
+    @include mq(tablet) {
+        display: none;
+    }
+    @include mq(desktop) {
+        display: flex;
+        flex-direction: row;
+    }
 
     &__offers {
         position: relative;
