@@ -1,12 +1,33 @@
 .section-list {
     padding-top: 94px;
     padding-bottom: 0px;
+    @include mq(phone) {
+        padding-top: 60px;
+    }
+    @include mq(tablet) {
+        padding-top: 60px;
+    }
+    @include mq(desktop) {
+        padding-top: 94px;
+    }
 }
 .lorem-list {
     display: flex;
     list-style: none;
     justify-content: center;
     gap: 30px;
+    @include mq(phone) {
+        display: flex;
+        flex-direction: column;
+    }
+    @include mq(tablet) {
+        display: flex;
+        flex-direction: column;
+    }
+    @include mq(desktop) {
+        display: flex;
+        flex-direction: row;
+    }
 }
 .lorem-list__our-atributes {
     display: flex;
@@ -28,6 +49,15 @@
     text-transform: uppercase;
     color: $mainColor;
     padding-bottom: 10px;
+    @include mq(phone) {
+        text-align: center;
+    }
+    @include mq(tablet) {
+        text-align: left;
+    }
+    @include mq(desktop) {
+        text-align: left;
+    }
 }
 
 .lorem-list p {

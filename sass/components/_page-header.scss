@@ -37,16 +37,6 @@
     display: flex;
     gap: 93px;
     align-items: center;
-    @include mq(phone) {
-        display: none;
-    }
-    @include mq(tablet) {
-        gap: 83px;
-        display: flex;
-    }
-    @include mq(desktop) {
-        gap: 93px;
-    }
 }
 
 .page-header > .container > .contacts {
@@ -70,6 +60,16 @@
 .page-header > .container > nav > .nav-list {
     display: flex;
     gap: 30px;
+    @include mq(phone) {
+        display: none;
+    }
+    @include mq(tablet) {
+        gap: 60px;
+        display: flex;
+    }
+    @include mq(desktop) {
+        gap: 46px;
+    }
 }
 
 .page-header > .container > nav > a {

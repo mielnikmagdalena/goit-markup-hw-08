@@ -22,6 +22,19 @@
     list-style: none;
     gap: 30px;
     padding-bottom: 94px;
+    @include mq(phone) {
+        display: flex;
+        flex-direction: column;
+    }
+    @include mq(tablet) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    @include mq(desktop) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
 }
 .cards li {
     background: $primaryColor;
