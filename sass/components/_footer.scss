@@ -69,6 +69,7 @@
         flex-direction: row;
         justify-content: space-between;
         gap: 144px;
+        margin: auto;
     }
     @include mq(desktop) {
         display: flex;
@@ -148,6 +149,9 @@
     color: $primaryColor;
     padding-bottom: 20px;
     @include mq(phone) {
+        text-align: center;
+    }
+    @include mq(tablet) {
         text-align: center;
     }
     @include mq(desktop) {
