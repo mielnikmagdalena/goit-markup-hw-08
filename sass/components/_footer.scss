@@ -25,6 +25,20 @@
     justify-content: flex-start;
     align-items: flex-start;
     gap: 60px;
+    @include mq(phone) {
+        display: block;
+    }
+    @include mq(tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    @include mq(desktop) {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
 }
 .two-elements {
     display: flex;
