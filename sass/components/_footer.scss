@@ -33,10 +33,14 @@
         align-items: center;
     }
     @include mq(tablet) {
+        display: block;
         display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-between;
+        gap: 144px;
     }
+
     @include mq(desktop) {
         display: flex;
         flex-direction: row;
@@ -60,9 +64,11 @@
         text-align: center;
     }
     @include mq(tablet) {
+        display: block;
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 144px;
     }
     @include mq(desktop) {
         display: flex;
@@ -183,6 +189,20 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    @include mq(tablet) {
+        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    @include mq(desktop) {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
     }
 }
 .label-newsletter {
