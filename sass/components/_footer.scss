@@ -27,6 +27,10 @@
     gap: 60px;
     @include mq(phone) {
         display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     @include mq(tablet) {
         display: flex;
@@ -35,6 +39,7 @@
     }
     @include mq(desktop) {
         display: flex;
+        flex-direction: row;
         flex-wrap: nowrap;
         justify-content: flex-start;
         align-items: flex-start;
@@ -45,6 +50,27 @@
     justify-content: center;
     align-items: flex-start;
     gap: 70px;
+    @include mq(phone) {
+        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+        text-align: center;
+    }
+    @include mq(tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    @include mq(desktop) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
 }
 .two-elements__logo {
     font-family: 'Raleway';
@@ -57,6 +83,9 @@
 
     &--studio-white {
         color: $primaryColor;
+        @include mq(phone) {
+            text-align: center;
+        }
     }
 }
 
@@ -64,6 +93,9 @@
     font-style: normal;
     padding-top: 20px;
     padding-bottom: 9px;
+    @include mq(phone) {
+        text-align: center;
+    }
 
     &--second-contacts {
         display: flex;
@@ -105,6 +137,9 @@
     letter-spacing: 0.03em;
     color: $primaryColor;
     padding-bottom: 20px;
+    @include mq(phone) {
+        text-align: center;
+    }
 }
 .join-us {
     gap: 10px;
@@ -135,6 +170,13 @@
     justify-content: center;
     align-items: flex-end;
     gap: 12px;
+    @include mq(phone) {
+        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 .label-newsletter {
     display: flex;
@@ -146,6 +188,9 @@
     text-transform: uppercase;
     color: $primaryColor;
     gap: 20px;
+    @include mq(phone) {
+        text-align: center;
+    }
 }
 .label-newsletter__email {
     width: 358px;
