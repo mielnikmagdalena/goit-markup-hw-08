@@ -40,12 +40,10 @@
     @include mq(phone) {
         display: flex;
         flex-wrap: wrap;
-        flex-basis: calc(50% - 10px);
     }
     @include mq(tablet) {
         display: flex;
         flex-wrap: wrap;
-        flex-basis: calc(33.33% - 10px);
     }
     @include mq(desktop) {
         display: flex;
@@ -53,18 +51,20 @@
         flex-wrap: nowrap;
     }
 }
-/*.project-list {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    flex-basis: calc((100%-60px) / 3);
-    gap: 30px;
-}*/
+
 .container-clients__signs {
     padding: 15px 32px;
     border: 1px solid $colorSocialIcons;
     border-radius: 4px;
-
+    @include mq(phone) {
+        margin: 0 32px;
+    }
+    @include mq(tablet) {
+        margin: 0 32px;
+    }
+    @include mq(desktop) {
+        margin: auto;
+    }
     &:hover,
     &:focus {
         border-color: $secondaryColor;
