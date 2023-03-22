@@ -70,6 +70,7 @@
         flex-wrap: nowrap;
         justify-content: flex-start;
         align-items: flex-start;
+        text-align: start;
     }
 }
 .two-elements__logo {
@@ -95,6 +96,9 @@
     padding-bottom: 9px;
     @include mq(phone) {
         text-align: center;
+    }
+    @include mq(desktop) {
+        text-align: start;
     }
 
     &--second-contacts {
@@ -139,6 +143,9 @@
     padding-bottom: 20px;
     @include mq(phone) {
         text-align: center;
+    }
+    @include mq(desktop) {
+        text-align: start;
     }
 }
 .join-us {
@@ -190,6 +197,9 @@
     gap: 20px;
     @include mq(phone) {
         text-align: center;
+    }
+    @include mq(desktop) {
+        text-align: start;
     }
 }
 .label-newsletter__email {
