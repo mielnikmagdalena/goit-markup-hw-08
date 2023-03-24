@@ -1,4 +1,4 @@
-.menu-toggle .js-open-menu {
+.menu-toggle {
     position: relative;
     z-index: 2;
     min-height: 40px;
@@ -8,7 +8,8 @@
     justify-content: center;
     margin: 0;
     padding: 0;
-    background-color: $primaryColor;
+    color: $mainColor;
+    background-color: transparent;
     cursor: pointer;
     border: none;
     border-radius: 50%;
@@ -26,9 +27,9 @@
 }
 .menu-toggle:hover,
 .menu-toggle:focus {
-    background-color: $secondaryColor;
+    color: $secondaryColor;
 }
-.menu-container .js-menu-container {
+.menu-container {
     position: fixed;
     top: 0;
     left: 0;
@@ -44,35 +45,60 @@
     transform: translateX(0);
 }
 .menu-container .menu-toggle {
-    position: relative;
+    position: absolute;
     top: 16px;
     right: 16px;
     color: $primaryColor;
 }
-.menu-toggle .js-open-menu {
-    position: absolute;
-    z-index: 1;
-    min-height: 40px;
-    min-width: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-    background-color: $primaryColor;
-    cursor: pointer;
-    border: none;
-    border-radius: 50%;
-    outline: none;
-}
-.mobile-menu {
+.mobile-menu-list-one {
     padding: 0;
     margin: 0;
     list-style: none;
 }
-.mobile-menu__link {
-    display: block;
-    padding: 10px;
-    color: $mainColor;
+
+.mobile-menu-list-one__link-one {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
     text-decoration: none;
+    color: $mainColor;
+    margin-bottom: 35px;
+}
+.mobile-menu-list-one__link-one.tel {
+    margin-top: 302px;
+    margin-bottom: 32px;
+}
+.mobile-menu-list-one__link-two {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: $colorIcon;
+}
+.mobile-menu-list-two {
+    padding: 0;
+    margin-top: 64px;
+    margin-left: 40px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.mobile-menu-list-two__link-three {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: $secondaryColor;
 }
