@@ -82,7 +82,7 @@
     margin-bottom: 35px;
 }
 .mobile-menu-list-one__link-one:hover {
-    color: red;
+    color: $secondaryColor;
 }
 .mobile-menu-list-one__link-one.tel {
     margin-top: 302px;
@@ -98,6 +98,9 @@
     letter-spacing: 0.02em;
     text-decoration: none;
     color: $colorIcon;
+}
+.mobile-menu-list-one__link-two:hover {
+    color: $secondaryColor;
 }
 .mobile-menu-list-two {
     padding: 0;
