@@ -14,14 +14,13 @@
     border: none;
     border-radius: 50%;
     outline: none;
-}
-@media (min-width: 768px) {
-    .menu-toggle {
+    @include mq(phone) {
+        display: flex;
+    }
+    @include mq(tablet) {
         display: none;
     }
-}
-@media (min-width: 1200px) {
-    .menu-toggle {
+    @include mq(desktop) {
         display: none;
     }
 }
@@ -72,6 +71,7 @@
 .mobile-menu-list-one__link-one.tel {
     margin-top: 302px;
     margin-bottom: 32px;
+    color: $secondaryColor;
 }
 .mobile-menu-list-one__link-two {
     font-family: 'Roboto';
@@ -86,7 +86,7 @@
 .mobile-menu-list-two {
     padding: 0;
     margin-top: 64px;
-    margin-left: 40px;
+    margin-right: 83px;
     list-style: none;
     display: flex;
     flex-direction: row;
