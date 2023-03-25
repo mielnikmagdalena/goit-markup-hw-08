@@ -24,10 +24,23 @@
         display: none;
     }
 }
-.menu-toggle:hover,
-.menu-toggle:focus {
-    color: $secondaryColor;
+.hamburger {
+    fill: $mainColor;
+    cursor: pointer;
 }
+.hamburger:hover,
+.hamburger:focus {
+    fill: $secondaryColor;
+}
+.cross {
+    fill: $mainColor;
+    cursor: pointer;
+}
+.cross:hover,
+.cross:focus {
+    fill: $secondaryColor;
+}
+
 .menu-container {
     position: fixed;
     top: 0;
@@ -67,6 +80,9 @@
     text-decoration: none;
     color: $mainColor;
     margin-bottom: 35px;
+}
+.mobile-menu-list-one__link-one:hover {
+    color: red;
 }
 .mobile-menu-list-one__link-one.tel {
     margin-top: 302px;
