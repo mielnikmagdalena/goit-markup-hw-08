@@ -56,6 +56,19 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px $colorBackgroundBackdrop;
     border-radius: 0px 0px 4px 4px;
+    max-width: 270px;
+    @media screen and (max-width: 479px) {
+        max-width: 450px;
+    }
+    @include mq(phone) {
+        max-width: 450px;
+    }
+    @include mq(tablet) {
+        max-width: 354px;
+    }
+    @include mq(desktop) {
+        max-width: 270px;
+    }
 }
 .cards__job-list {
     display: flex;

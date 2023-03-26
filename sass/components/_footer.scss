@@ -15,9 +15,10 @@
 }
 
 .container {
-    max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
+    max-width: 100%;
+    border: 2px solid #212121;
 }
 
 .four-elements {
@@ -263,6 +264,7 @@
 .label-newsletter__email {
     width: 358px;
     height: 50px;
+    margin: 0 auto;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
