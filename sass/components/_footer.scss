@@ -228,7 +228,7 @@
     }
     @include mq(desktop) {
         justify-content: center;
-        align-items: center;
+        align-items: flex-end;
         display: flex;
         flex-direction: row;
     }
