@@ -41,6 +41,9 @@
         list-style: none;
         padding-bottom: 94px;
     }
+    .cards img {
+        max-width: 100%;
+    }
 }
 .cards li {
     background: $primaryColor;
