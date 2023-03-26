@@ -82,14 +82,14 @@
     letter-spacing: 0.02em;
     text-decoration: none;
     color: $mainColor;
-    margin-bottom: 35px;
+    margin-bottom: 32px;
 }
 .mobile-menu-list-one__link-one:hover,
 .mobile-menu-list-one__link-one:focus {
     color: $secondaryColor;
 }
 .mobile-menu-list-one__link-one.tel {
-    margin-top: 302px;
+    margin-top: 270px;
     margin-bottom: 32px;
     color: $colorIcon;
 }
@@ -129,10 +129,12 @@
     text-decoration: none;
     color: $colorIcon;
     background: $primaryColor;
-    border-right: 1px solid $colorFigcaption;
     padding-right: 10px;
 }
-.mobile-menu-list-two__link-three:last-child {
+.mobile-menu-list-two li a {
+    border-right: 1px solid $colorFigcaption;
+}
+.mobile-menu-list-two li:last-child a {
     border-right: none;
 }
 .mobile-menu-list-two__link-three:hover,
