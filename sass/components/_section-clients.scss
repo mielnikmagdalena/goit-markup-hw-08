@@ -21,6 +21,9 @@
     text-align: center;
     padding-top: 0px;
     padding-bottom: 50px;
+    @media screen and (max-width: 479px) {
+        padding-bottom: 30px;
+    }
     @include mq(phone) {
         padding-bottom: 30px;
     }
@@ -37,6 +40,10 @@
     align-items: center;
     justify-content: center;
     list-style: none;
+    @media screen and (max-width: 479px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
     @include mq(phone) {
         display: flex;
         flex-wrap: wrap;
@@ -56,6 +63,9 @@
     padding: 15px 32px;
     border: 1px solid $colorSocialIcons;
     border-radius: 4px;
+    @media screen and (max-width: 479px) {
+        margin: 0 32px;
+    }
     @include mq(phone) {
         margin: 0 32px;
     }

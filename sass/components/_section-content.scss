@@ -10,6 +10,23 @@
     background-position: center;
     background-size: cover;
     background-color: $colorFooterWrapper;
+    @media screen and (max-width: 479px) {
+        min-width: 479px;
+        background-image: linear-gradient(
+                $colorBackgroundSection,
+                $colorBackgroundSection
+            ),
+            url('../images/Officex1Mb.jpg');
+        @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+            background-image: linear-gradient(
+                    $colorBackgroundSection,
+                    $colorBackgroundSection
+                ),
+                url('../images/Officex2Mb.jpg');
+        }
+    }
     @include mq(phone) {
         min-width: 480px;
         background-image: linear-gradient(
@@ -26,39 +43,39 @@
                 ),
                 url('../images/Officex2Mb.jpg');
         }
-        @include mq(tablet) {
-            min-width: 768px;
+    }
+    @include mq(tablet) {
+        min-width: 768px;
+        background-image: linear-gradient(
+                $colorBackgroundSection,
+                $colorBackgroundSection
+            ),
+            url('../images/Officex1Tb.jpg');
+        @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
             background-image: linear-gradient(
                     $colorBackgroundSection,
                     $colorBackgroundSection
                 ),
-                url('../images/Officex1Tb.jpg');
-            @media screen and (min-device-pixel-ratio: 2),
-                screen and (min-resolution: 192dpi),
-                screen and (min-resolution: 2dppx) {
-                background-image: linear-gradient(
-                        $colorBackgroundSection,
-                        $colorBackgroundSection
-                    ),
-                    url('../images/Officex2Tb.jpg');
-            }
+                url('../images/Officex2Tb.jpg');
         }
-        @include mq(desktop) {
-            min-width: 1200px;
+    }
+    @include mq(desktop) {
+        min-width: 1200px;
+        background-image: linear-gradient(
+                $colorBackgroundSection,
+                $colorBackgroundSection
+            ),
+            url('../images/Officex1Dt.jpg');
+        @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
             background-image: linear-gradient(
                     $colorBackgroundSection,
                     $colorBackgroundSection
                 ),
-                url('../images/Officex1Dt.jpg');
-            @media screen and (min-device-pixel-ratio: 2),
-                screen and (min-resolution: 192dpi),
-                screen and (min-resolution: 2dppx) {
-                background-image: linear-gradient(
-                        $colorBackgroundSection,
-                        $colorBackgroundSection
-                    ),
-                    url('../images/Officex2Dt.jpg');
-            }
+                url('../images/Officex2Dt.jpg');
         }
     }
 }

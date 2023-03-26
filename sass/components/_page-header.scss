@@ -18,7 +18,10 @@
     justify-content: space-between;
     padding-top: 24px;
     padding-bottom: 25px;
-
+    @media screen and (max-width: 479px) {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
     @include mq(phone) {
         padding-top: 16px;
         padding-bottom: 16px;
@@ -42,6 +45,9 @@
 .page-header > .container > .contacts {
     display: flex;
     gap: 30px;
+    @media screen and (max-width: 479px) {
+        display: none;
+    }
     @include mq(phone) {
         display: none;
     }
@@ -60,6 +66,9 @@
 .page-header > .container > nav > .nav-list {
     display: flex;
     gap: 30px;
+    @media screen and (max-width: 479px) {
+        display: none;
+    }
     @include mq(phone) {
         display: none;
     }

@@ -2,6 +2,9 @@
     padding-top: 94px;
     padding-bottom: 0px;
     margin: 0 auto;
+    @media screen and (max-width: 479px) {
+        padding-top: 60px;
+    }
     @include mq(phone) {
         padding-top: 60px;
     }
@@ -17,6 +20,10 @@
     list-style: none;
     justify-content: center;
     gap: 30px;
+    @media screen and (max-width: 479px) {
+        display: flex;
+        flex-direction: column;
+    }
     @include mq(phone) {
         display: flex;
         flex-direction: column;
@@ -33,6 +40,21 @@
         list-style: none;
     }
 }
+.lorem-list li {
+    width: 100%;
+    @media screen and (max-width: 479px) {
+        max-width: 100%;
+    }
+    @include mq(phone) {
+        max-width: 100%;
+    }
+    @include mq(tablet) {
+        max-width: 40%;
+    }
+    @include mq(desktop) {
+        max-width: 25%;
+    }
+}
 .lorem-list__our-atributes {
     display: flex;
     align-items: center;
@@ -43,16 +65,6 @@
     background-color: $colorBackgroundSectionCards;
     padding: 25px 0px;
     margin-bottom: 30px;
-    @include mq(phone) {
-        max-width: 450px;
-    }
-    @include mq(tablet) {
-        max-width: 354px;
-    }
-    @include mq(desktop) {
-        display: flex;
-        max-width: 270px;
-    }
 }
 
 .lorem-list h3 {

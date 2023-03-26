@@ -14,6 +14,9 @@
     border: none;
     border-radius: 50%;
     outline: none;
+    @media screen and (max-width: 479px) {
+        display: flex;
+    }
     @include mq(phone) {
         display: flex;
     }

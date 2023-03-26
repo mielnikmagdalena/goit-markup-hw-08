@@ -12,7 +12,6 @@
 }
 .container {
     width: 100%;
-    max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -23,6 +22,11 @@
     list-style: none;
     gap: 30px;
     padding-bottom: 94px;
+    @media screen and (max-width: 479px) {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 60px;
+    }
     @include mq(phone) {
         display: flex;
         flex-direction: column;

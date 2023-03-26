@@ -25,6 +25,13 @@
     justify-content: flex-start;
     align-items: flex-start;
     gap: 60px;
+    @media screen and (max-width: 479px) {
+        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     @include mq(phone) {
         display: block;
         display: flex;
@@ -52,6 +59,15 @@
     justify-content: center;
     align-items: flex-start;
     gap: 70px;
+    @media screen and (max-width: 479px) {
+        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+        text-align: center;
+    }
     @include mq(phone) {
         display: block;
         display: flex;
@@ -90,6 +106,9 @@
 
     &--studio-white {
         color: $primaryColor;
+        @media screen and (max-width: 479px) {
+            text-align: center;
+        }
         @include mq(phone) {
             text-align: center;
         }
@@ -100,6 +119,9 @@
     font-style: normal;
     padding-top: 20px;
     padding-bottom: 9px;
+    @media screen and (max-width: 479px) {
+        text-align: center;
+    }
     @include mq(phone) {
         text-align: center;
     }
@@ -147,6 +169,9 @@
     letter-spacing: 0.03em;
     color: $primaryColor;
     padding-bottom: 20px;
+    @media screen and (max-width: 479px) {
+        text-align: center;
+    }
     @include mq(phone) {
         text-align: center;
     }
@@ -186,6 +211,13 @@
     justify-content: center;
     align-items: flex-end;
     gap: 12px;
+    @media screen and (max-width: 479px) {
+        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     @include mq(phone) {
         display: block;
         display: flex;
@@ -218,6 +250,9 @@
     text-transform: uppercase;
     color: $primaryColor;
     gap: 20px;
+    @media screen and (max-width: 479px) {
+        text-align: center;
+    }
     @include mq(phone) {
         text-align: center;
     }
