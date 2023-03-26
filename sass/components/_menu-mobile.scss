@@ -84,12 +84,17 @@
     color: $mainColor;
     margin-bottom: 35px;
 }
-.mobile-menu-list-one__link-one:hover {
+.mobile-menu-list-one__link-one:hover,
+.mobile-menu-list-one__link-one:focus {
     color: $secondaryColor;
 }
 .mobile-menu-list-one__link-one.tel {
     margin-top: 302px;
     margin-bottom: 32px;
+    color: $colorIcon;
+}
+.mobile-menu-list-one__link-one.tel:hover,
+.mobile-menu-list-one__link-one.tel:focus {
     color: $secondaryColor;
 }
 .mobile-menu-list-one__link-two {
@@ -122,5 +127,9 @@
     line-height: 1.22;
     letter-spacing: 0.02em;
     text-decoration: none;
+    color: $colorIcon;
+}
+.mobile-menu-list-two__link-three:hover,
+.mobile-menu-list-two__link-three:focus {
     color: $secondaryColor;
 }
